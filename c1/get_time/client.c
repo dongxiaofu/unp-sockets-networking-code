@@ -3,8 +3,6 @@
 //
 #include "client.h"
 
-void err_sys(const char *str);
-
 int main(int argc, char **argv) {
     if (argc < 2) {
         err_sys("usage: a.out <IPAdress>");
@@ -48,9 +46,4 @@ void client(char **argv) {
     }
 
     exit(0);
-}
-
-void err_sys(const char *str) {
-    fprintf(stderr, "%s\n", str);
-    exit(1);
 }

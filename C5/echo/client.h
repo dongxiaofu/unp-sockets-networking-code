@@ -6,15 +6,13 @@
 #define UNP_SOCKETS_NETWORKING_CODE_CLIENT_H
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <netinet/in.h>
-#include <strings.h>
 #include <arpa/inet.h>
 #include <zconf.h>
 #include "../../common.h"
 
-const int MAX_LENGTH = 1024;
-
 void client(char **argv);
+
+void str_cli(FILE *fp, int sockfd);
 
 #endif //UNP_SOCKETS_NETWORKING_CODE_CLIENT_H
